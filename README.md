@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to WebPlorer 👋</h1>
+<h1 align="center">Welcome to webplorer 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.11-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/node-%3E%3D%204.0.x-blue.svg" />
@@ -12,7 +12,7 @@
     <img alt="License: MIT" src="https://img.shields.io/github/license/YuanYap/webplorer" />
   </a>
   <a href="https://twitter.com/KhaiYuanYap" target="_blank">
-    <img alt="Twitter: KhaiYuanYap" src="https://img.shields.io/twitter/follow/KhaiYuanYap.svg?style=social?style=flat&logo=appveyor" />
+    <img alt="Twitter: KhaiYuanYap" src="https://img.shields.io/twitter/follow/KhaiYuanYap.svg?style=social" />
   </a>
 </p>
 
