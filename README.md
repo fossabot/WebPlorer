@@ -11,8 +11,7 @@
   <a href="https://github.com/YuanYap/WebPlorer/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/YuanYap/webplorer" />
   </a>
-  <a href="https://twitter.com/KhaiYuanYap" target="_blank">
-    <img alt="Twitter: KhaiYuanYap" src="https://img.shields.io/twitter/follow/KhaiYuanYap.svg?style=social" />
+
   </a>
 </p>
 
