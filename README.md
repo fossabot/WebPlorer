@@ -35,6 +35,13 @@ npm install
 npm start
 ```
 
+## App for WebPlorer
+```sh
+npm start
+```
+> _Remember to start the server first._
+
+
 ## Author
 
 👤 **Yap Khai Yuan**
