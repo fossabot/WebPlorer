@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to webplorer 👋</h1>
+<h1 align="center">Welcome to webplorer's offical site 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.11-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/node-%3E%3D%204.0.x-blue.svg" />
@@ -12,16 +12,18 @@
     <img alt="License: MIT" src="https://img.shields.io/github/license/YuanYap/webplorer" />
   </a>
 
-  </a>
 </p>
 
 > An open sourced web based file explorer that is suitable for all to use.
 
-### 🏠 [Homepage](https://github.com/YuanYap/WebPlorer/blob/main/README.md)
+### 🏠 [Homepage](https://github.com/YuanYap/WebPlorer)
 
 ## Prerequisites
 
 - node >= 4.0.x
+- chalk >= 1.0.0.x
+- nodemon >= 2.0.12.x
+
 
 ## Install
 
@@ -39,6 +41,8 @@ npm start
 ```sh
 npm start
 ```
+[GitHub Repo](https://github.com/YuanYap/WebPlorer-App)
+
 > _Remember to start the server first._
 
 
