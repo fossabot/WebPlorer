@@ -1,2 +1,59 @@
-# WebPlorer
-An open sourced web based file explorer that is suitable for all to use.
+<h1 align="center">Welcome to webplorer 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1.11-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/node-%3E%3D%204.0.x-blue.svg" />
+  <a href="https://github.com/YuanYap/WebPlorer#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/YuanYap/WebPlorer/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/YuanYap/WebPlorer/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/YuanYap/webplorer" />
+  </a>
+  <a href="https://twitter.com/KhaiYuanYap" target="_blank">
+    <img alt="Twitter: KhaiYuanYap" src="https://img.shields.io/twitter/follow/KhaiYuanYap.svg?style=social" />
+  </a>
+</p>
+
+> An open sourced web based file explorer that is suitable for all to use.
+
+### 🏠 [Homepage](https://github.com/YuanYap/WebPlorer/blob/main/README.md)
+
+## Prerequisites
+
+- node >= 4.0.x
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm start
+```
+
+## Author
+
+👤 **Yap Khai Yuan**
+
+* Website: https://www.youtube.com/c/SimplySoftware
+* Twitter: [@KhaiYuanYap](https://twitter.com/KhaiYuanYap)
+* Github: [@YuanYap](https://github.com/YuanYap)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/YuanYap/WebPlorer/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2021 [Yap Khai Yuan](https://github.com/YuanYap).<br />
+This project is [MIT](https://github.com/YuanYap/WebPlorer/blob/master/LICENSE) licensed.
+
