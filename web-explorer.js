@@ -9,7 +9,7 @@ let path = require('path')
 let express = require('express')
 let contentDisposition = require('content-disposition')
 let pkg = require(path.join(__dirname, 'package.json'))
-let scan = require('./scan')
+let scan = require('./scanner')
 
 let program = require('commander')
 
