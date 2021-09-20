@@ -1,7 +1,9 @@
 "use strict"
 
+//KYuan and KChuen 2021 GPL-3.0
 let fs = require('fs')
 
+//KYuan and KChuen 2021 GPL-3.0
 module.exports = function scan(dir, alias) {
     return {
         name: alias,
@@ -11,12 +13,14 @@ module.exports = function scan(dir, alias) {
     }
 }
 
+//KYuan and KChuen 2021 GPL-3.0
 function walk(dir, prefix) {
     prefix = prefix || ''
 
     if (!fs.statSync(dir))
         return []
 
+    //KYuan and KChuen 2021 GPL-3.0
     return fs.readdirSync(dir).filter(function(f) {
         return f && f[0] != '.'     
     }).map(function(f) {
@@ -32,6 +36,7 @@ function walk(dir, prefix) {
             }
         }
 
+        //KYuan and KChuen 2021 GPL-3.0
         return {
             name: f,
             type: 'file',
