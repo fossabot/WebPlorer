@@ -1,6 +1,6 @@
 {
   "name": "webplorer",
-  "version": "1.2.0",
+  "version": "1.2.8",
   "description": "An open sourced web based file explorer that is suitable for all to use.",
   "main": "web-explorer.js",
   "scripts": {
