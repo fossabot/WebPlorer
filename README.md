@@ -65,5 +65,5 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Yap Khai Yuan](https://github.com/YuanYap).<br />
-This project is [MIT](https://github.com/YuanYap/WebPlorer/blob/master/LICENSE) licensed.
+This project is [GPL-3.0](https://github.com/YuanYap/WebPlorer/blob/master/LICENSE) licensed.
 
