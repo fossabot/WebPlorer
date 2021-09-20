@@ -7,7 +7,6 @@ $(function(){
     let fileList = filemanager.find('.data')
 
 
-    // Start by fetching the file data from scan route with an AJAX request
     $.get('scan', function(data) {
         let response = [data]
         let currentPath = ''
@@ -16,19 +15,13 @@ $(function(){
         let files = []
 
 
-        /* This event listener monitors changes on the URL. We use it to
-        *  capture back/forward navigation in the browser.
-        */
+
         $(window).on('hashchange', function() {
             goto(window.location.hash)
 
-            /* We are triggering the event. This will execute 
-            *  this function on page load, so that we show the correct folder:
-            */
         }).trigger('hashchange')
 
 
-        // Hiding and showing the search box
         filemanager.find('.search').click(function() {
             let search = $(this)
             search.find('span').hide()
@@ -36,10 +29,7 @@ $(function(){
         })
 
 
-        /* Listening for keyboard input on the search field.
-        *  We are using the "input" event which detects cut and paste
-        *  in addition to keyboard input.
-        */
+
         filemanager.find('input').on('input', function(e) {
             folders = []
             files = []
@@ -49,7 +39,6 @@ $(function(){
             if (value.length) {
                 filemanager.addClass('searching')
 
-                // Update the hash on every key stroke
                 window.location.hash = 'search=' + value.trim()
             }
             else {
@@ -57,7 +46,6 @@ $(function(){
                 window.location.hash = encodeURIComponent(currentPath)
             }
         }).on('keyup', function(e) {
-            // Clicking 'ESC' button triggers focusout and cancels the search
             let search = $(this)
 
             if(e.keyCode == 27) {
@@ -65,7 +53,6 @@ $(function(){
             }
 
         }).focusout(function(e) {
-            // Cancel the search
             let search = $(this)
 
             if(!search.val().trim().length) {
@@ -76,14 +63,12 @@ $(function(){
         })
 
 
-        // Clicking on folders
         fileList.on('click', 'li.folders', function(e) {
             e.preventDefault()
 
             let nextDir = $(this).find('a.folders').attr('href')
 
             if(filemanager.hasClass('searching')) {
-                // Building the breadcrumbs
                 breadcrumbsUrls = generateBreadcrumbs(nextDir)
 
                 filemanager.removeClass('searching')
@@ -99,7 +84,6 @@ $(function(){
         })
 
 
-        // Clicking on breadcrumbs
         breadcrumbs.on('click', 'a', function(e){
             e.preventDefault()
 
@@ -112,14 +96,12 @@ $(function(){
         })
 
 
-        // Navigates to the given hash (path)
         function goto(hash) {
             hash = decodeURIComponent(hash).slice(1).split('=')
 
             if (hash.length) {
                 let rendered = ''
 
-                // if hash has search in it
                 if (hash[0] === 'search') {
                     filemanager.addClass('searching')
                     rendered = searchData(response, hash[1].toLowerCase())
@@ -133,7 +115,6 @@ $(function(){
                     }
                 }
 
-                // if hash is some path
                 else if (hash[0].trim().length) {
                     rendered = searchByPath(hash[0])
 
@@ -149,7 +130,6 @@ $(function(){
                     }
                 }
 
-                // if there is no hash
                 else {
                     currentPath = data.path
                     breadcrumbsUrls.push(data.path)
@@ -158,7 +138,6 @@ $(function(){
             }
         }
 
-        // Splits a file path and turns it into clickable breadcrumbs
         function generateBreadcrumbs(nextDir){
             let path = nextDir.split('/').slice(0)
             for (let i=1; i<path.length; i++){
@@ -168,7 +147,6 @@ $(function(){
         }
 
 
-        // Locates a file by path
         function searchByPath(dir) {
             let path = dir.split('/')
             let demo = response
@@ -189,7 +167,6 @@ $(function(){
         }
 
 
-        // Recursively search through the file tree
         function searchData(data, searchTerms) {
             data.forEach(function(d) {
                 if (d.type === 'folder') {
@@ -209,7 +186,6 @@ $(function(){
         }
 
 
-        // Render the HTML for the file manager
         function render(data) {
             let scannedFolders = []
             let scannedFiles = []
@@ -230,7 +206,6 @@ $(function(){
             }
 
 
-            // Empty the old result and make the new one
             fileList.empty().hide()
 
             if (!scannedFolders.length && !scannedFiles.length) {
@@ -281,7 +256,6 @@ $(function(){
             }
 
 
-            // Generate the breadcrumbs
             let url = ''
 
             if (filemanager.hasClass('searching')) {
@@ -305,18 +279,15 @@ $(function(){
             breadcrumbs.text('').append(url)
 
 
-            // Show the generated elements
             fileList.animate({'display':'inline-block'})
         }
 
 
-        // This function escapes special html characters in names
         function escapeHTML(text) {
             return text.replace(/\&/g,'&amp;').replace(/\</g,'&lt;').replace(/\>/g,'&gt;')
         }
 
 
-        // Convert file sizes from bytes to human readable units
         function bytesToSize(bytes) {
             let sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
             if (bytes == 0) return '0 Bytes'
