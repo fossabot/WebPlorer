@@ -8,6 +8,7 @@
   <a href="https://github.com/YuanYap/WebPlorer/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FYuanYap%2FWebPlorer?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FYuanYap%2FWebPlorer.svg?type=shield"/></a>
   <a href="https://github.com/YuanYap/WebPlorer/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/YuanYap/webplorer" />
   </a>
@@ -15,6 +16,9 @@
 </p>
 
 > An open sourced web based file explorer that is suitable for all to use.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FYuanYap%2FWebPlorer.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FYuanYap%2FWebPlorer?ref=badge_large)
 
 ### 🏠 [Homepage](https://github.com/YuanYap/WebPlorer)
 
@@ -66,4 +70,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2021 [Yap Khai Yuan](https://github.com/YuanYap).<br />
 This project is [GPL-3.0](https://github.com/YuanYap/WebPlorer/blob/master/LICENSE) licensed.
-
